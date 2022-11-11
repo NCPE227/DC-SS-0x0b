@@ -66,7 +66,7 @@ GuiLayoutNameState InitGuiLayoutName(void);
 void GuiLayoutName(GuiLayoutNameState *state);
 static void Button001();                // Button: Button001 logic
 static void Button002();                // Button: Button002 logic
-static void Load Game();                // Button: Load Game logic
+static void LoadGame();                // Button: Load Game logic
 static void Button004();                // Button: Button004 logic
 static void Button005();                // Button: Button005 logic
 static void Button006();                // Button: Button006 logic
