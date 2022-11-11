@@ -88,10 +88,10 @@ void GuiSound-settings(GuiSound-settingsState *state)
     state->Slider001Value = GuiSlider((Rectangle){ 576, 192, 112, 16 }, "Volume", NULL, state->Slider001Value, 0, 100);
 }
 
-//Sets the volume level based on a slider bar input
+//Sets the volume level based on a slider bar float value input
 static void VolumeLevel()
 {
-
+    // TODO: Implement control logic
 
 }
 
