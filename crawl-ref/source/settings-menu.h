@@ -42,6 +42,10 @@ typedef struct {
 extern "C" {            // Prevents name mangling of functions
 #endif
 
+
+inline int windowWidth = 24;
+inline int windowHeight = 168;
+
 SettingsMenu InitGuiLayoutName(void);
 void GuiLayoutName(SettingsMenu *state);
 static void ResumeGame();
@@ -113,24 +117,25 @@ static void LoadFile()
 //Open a submenu containing a few display settings
 static void DisplaySettings()
 {
-    // TODO: Implement control logic
+    initWindow(windowWidth, windowHeight, "Display Settings")
 }
 
 //Open a submenu containing a few game settings
 static void GameSettings()
 {
-    // TODO: Implement control logic
+   initWindow(windowWidth, windowHeight, "Game Settings")
 }
 
 //Open a submenu containing a few sound settings
 static void SoundSettings()
 {
-    // TODO: Implement control logic
+    initWindow(windowWidth, windowHeight, "Sound Settings")
 }
 
 //Exit the game and return to desktop
 static void ExitGame() 
 {
+    //maybe add a message box that asks if you're sure you want to exit
     exit(0);
 }
 

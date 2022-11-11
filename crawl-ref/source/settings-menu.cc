@@ -2,10 +2,8 @@
 
 int main() 
 {
-    int screenWidth = 24;
-    int screenHeight = 168;
 
-    InitWindow(screenWidth, screenHeight, "Settings Menu");
+    InitWindow(windowWidth, windowHeight, "Settings Menu");
     SetExitKey(KEY_ESCAPE); //same key we use to open the menu
 
     bool exitWindow = false;
@@ -14,7 +12,7 @@ int main()
     {
         exitWindow = WindowShouldClose();
 
-        if (IsKeyPressed(KEY_ESCAPE)) exitWindow = true;
+        if (IsKeyPressed(KEY_ESCAPE)) exitWindow = true; //when the escape key is pressed, the settings menu closes
 
         //Everything we want to show up on screen will be placed between the begin and end drawing functions
         BeginDrawing();
