@@ -1,15 +1,17 @@
+#include <iostream>
 #include <fstream>
+using namespace std;
 
 
-void SaveFile(){
+int SaveFile(){
 
-    ifstream FileName("nameofFile")
+    ifstream FileName("nameofSavedFile");
 
     if(!FileName){
-        return -1;
+        return 1;
 
     }else{
-
+        return 0 ;
         // game is saved
     }
 }
@@ -17,20 +19,25 @@ void SaveFile(){
 
 
 
-void LoadFile(){
+int LoadFile(){
 
-    ofstream Loadingfile("nameofFile")
+    ofstream Loadingfile("nameofLoadFile");
 
     if(!Loadingfile){
-        return -1;
+        return 1;
 
     }else{
-
+        return 0 ;
         // game is loaded
     }
 
-    
+}
 
+
+
+int main(){
+
+///check to see if user wants to save or load a file.
 
 
 
